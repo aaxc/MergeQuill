@@ -1,0 +1,35 @@
+{
+  "name": "merge-quill",
+  "version": "1.0.0",
+  "description": "An efficient Electron application designed to fetch and save merge requests from a specific GitLab project into PDF files for enhanced accessibility and archiving.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^28"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaxc/MergeQuill.git"
+  },
+  "author": "Dainis Abols (aaxc)",
+  "company": "Your Company",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaxc/MergeQuill/issues"
+  },
+  "homepage": "https://github.com/aaxc/MergeQuill#readme",
+  "build": {
+    "appId": "lv.aaxc.mergequill",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}
